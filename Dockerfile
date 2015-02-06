@@ -5,8 +5,8 @@ FROM ubuntu
 MAINTAINER Adedayo Omitayo "adedayo.omitayo@flowswift.com"
 
 # Add diversions
-RUN dpkg-divert --local --rename --add /sbin/initctl
-RUN ln -s /bin/true /sbin/initctl
+#RUN dpkg-divert --local --rename --add /sbin/initctl
+#RUN ln -s /bin/true /sbin/initctl
 
 # Import neo4j signing key
 #RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
