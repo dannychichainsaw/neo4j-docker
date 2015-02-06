@@ -12,7 +12,7 @@ MAINTAINER Adedayo Omitayo "adedayo.omitayo@flowswift.com"
 #RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 #RUN bash -c "echo deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen > /etc/apt/sources.list.d/10gen.list"
 
-RUN wgethttp://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add - 
+RUN wget http://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add - 
 
 # Create an Apt sources.list file
 RUN echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
