@@ -15,13 +15,13 @@ MAINTAINER Adedayo Omitayo "adedayo.omitayo@flowswift.com"
 #RUN 'wget http://debian.neo4j.org/neotechnology.gpg.key' | sudo apt-key add
 
 # Create an Apt sources.list file
-RUN echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
+#RUN echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
 
 # Find out about the files in neo4j repository
-RUN apt-get update
+#RUN apt-get update
 
 # Install Neo4j, community edition
-RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get -y install neo4j
+#RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get -y install neo4j
 
 EXPOSE 7474
 
